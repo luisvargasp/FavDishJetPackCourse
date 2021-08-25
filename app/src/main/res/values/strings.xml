@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FavDish</string>
+    <string name="title_home">All Dishes</string>
+    <string name="title_dashboard">Favourite</string>
+    <string name="title_notifications">Random Dish</string>
+
+    <string name="splash_screen_title">Fav Dish</string>
+
+    <string name="action_add_dish">Add Dish</string>
+    <string name="action_filter_dish">Filter Dish</string>
+
+
+    <string name="image_contentDescription">image</string>
+    <string name="lbl_title">Title</string>
+    <string name="lbl_type">Type</string>
+    <string name="lbl_category">Category</string>
+    <string name="lbl_ingredients">Ingredients</string>
+    <string name="lbl_cooking_time_in_minutes">Cooking Time In Minutes</string>
+    <string name="lbl_direction_to_cook">Direction To Cook</string>
+    <string name="lbl_add_dish">ADD DISH</string>
+
+    <!--TODO Step 4: Add the string values to the strings.xml file.-->
+    <!--START-->
+    <string name="title_select_image_action">Select Image Action</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_gallery">Gallery</string>
+    <string name="title_select_image">Select your image</string>
+
+    <string name="lbl_estimate_cooking_time">The approx time required to cook the dish is %1$s minutes.</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <!--END-->
+</resources>

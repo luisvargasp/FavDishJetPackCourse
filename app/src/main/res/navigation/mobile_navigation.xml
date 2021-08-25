@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/all_dishes">
+
+    <fragment
+        android:id="@+id/all_dishes"
+        android:name="com.tutorials.eu.favdish.view.fragments.AllDishesFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_all_dishes" >
+        <action
+            android:id="@+id/toDetail"
+            app:destination="@id/dishDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favourite_dishes"
+        android:name="com.tutorials.eu.favdish.view.fragments.FavouriteDishesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_favourite_dishes" >
+        <action
+            android:id="@+id/toDetailFromFav"
+            app:destination="@id/dishDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/random_dish"
+        android:name="com.tutorials.eu.favdish.view.fragments.RandomDishFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_random_dish" />
+    <fragment
+        android:id="@+id/dishDetailFragment"
+        android:name="com.tutorials.eu.favdish.view.fragments.DishDetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/dish_detail_fragment">
+        <argument
+            android:name="dish"
+            app:argType="com.tutorials.eu.favdish.model.entities.FavDish" />
+    </fragment>
+</navigation>
